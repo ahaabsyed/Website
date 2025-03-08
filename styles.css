@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: #0D0D0D;
+    color: #EDEDED;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+}
+
+.intro {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+}
+
+.contact input, .contact textarea {
+    background: none;
+    border: 1px solid #EDEDED;
+    padding: 10px;
+    color: #EDEDED;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact button {
+    background: #EDEDED;
+    color: #0D0D0D;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #BFBFBF;
+}
